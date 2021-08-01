@@ -21,7 +21,7 @@ class StatsServiceTest {
         StatsService service = new StatsService();
 
         int expected = 15;
-        int actual = service.averageSales(allSales);
+        int actual = service.avrgSales(allSales);
 
         assertEquals(expected, actual);
 
@@ -55,7 +55,7 @@ class StatsServiceTest {
         StatsService service = new StatsService();
 
         int expected = 5;
-        int actual = service.monthBelowAverageSales(allSales);
+        int actual = service.uunderSales(allSales);
 
         assertEquals(expected, actual);
 
@@ -66,7 +66,7 @@ class StatsServiceTest {
         StatsService service = new StatsService();
 
         int expected = 5;
-        int actual = service.monthUnderAverageSales(allSales);
+        int actual = service.upperSales(allSales);
 
         assertEquals(expected, actual);
 
